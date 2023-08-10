@@ -41,7 +41,8 @@ jobs:
           sudo mv kubescape /usr/local/bin/
 
       - name: Scan YAML files
-        run: /usr/local/bin/kubescape scan framework nsa *.yaml
-
+        run: |
+          export PATH=$PATH:/home/runner/.kubescape/bin
+          kubescape scan framework nsa *.yaml
 
 
