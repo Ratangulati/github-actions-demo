@@ -1,4 +1,4 @@
-name: Kubescape
+curl -s https://raw.githubusercontent.com/armosec/kubescape/master/install.sh | /bin/bashname: Kubescape
 
 on:
   push:
